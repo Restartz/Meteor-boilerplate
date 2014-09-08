@@ -1,0 +1,10 @@
+<template name="upload">
+	<h2>This is the Upload page.</h2>
+
+	<input id="fileinput" type="file" multiple />
+
+	{{#each images}}
+		<img src="{{url}}" alt="{{metadata.title}}" title="{{metadata.title}}">
+		<input type="text" class="desc" name="desc" value="{{metadata.title}}">
+	{{/each}}
+</template>

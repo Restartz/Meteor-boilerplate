@@ -1,0 +1,15 @@
+<template name="messages">
+	<ul class="messages list-group">
+		{{#each messages}}
+			{{> message}}
+		{{/each}}
+	</ul>
+
+    <button id="moreResults" type="button">More results</button>
+</template>
+
+<template name="message">
+	<li class="message list-group-item">
+		{{text}}
+	</li>
+</template>
